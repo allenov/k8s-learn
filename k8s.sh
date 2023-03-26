@@ -1,7 +1,7 @@
 #!/bin/sh
 curl -fsSL https://get.docker.com/ | sh
 sudo systemctl start docker
-sudo systemctl enabled docker
+sudo systemctl enable docker
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
